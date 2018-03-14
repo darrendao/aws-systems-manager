@@ -26,8 +26,8 @@ control 'Linux instance check' do
       its('addresses') {should_not include '0.0.0.0'}
     end
     
-    describe crontab do
-      its('commands') { should include '/some/scheduled/task.sh' }
-    end
+#     describe crontab do
+#       its('commands') { should include '/some/scheduled/task.sh' }
+#     end
   end
 end
