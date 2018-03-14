@@ -23,7 +23,7 @@ control 'Linux instance check' do
   if ! is_windows
     describe port(22) do
       it { should be_listening }
-      its('addresses') {should_not include '0.0.0.0'}
+#       its('addresses') {should_not include '0.0.0.0'}
     end
     
 #     describe crontab do
